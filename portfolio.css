@@ -6,15 +6,22 @@ body {
     color: #fff;
 }
 
+/* Ensure correct viewport scaling */
+meta[name="viewport"] {
+    content: "width=device-width, initial-scale=1.0";
+}
+
 /* Navigation Bar */
 .topnav {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;  /* Ensures wrapping on smaller screens */
+    flex-wrap: wrap; /* Ensures wrapping on smaller screens */
     background-color: #1f1f1f;
     padding: 15px 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative; /* Makes sure the hanging sign is positioned relative to this */
+    z-index: 10;
 }
 
 .topnav a {
@@ -46,6 +53,115 @@ body {
     }
 }
 
+/* Hanging Sign */
+.hanging-sign {
+    position: absolute;
+    top: 100px; /* Places it right below the navbar */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1000px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #1f1f1f;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+    margin-top: 10px;
+}
+
+/* Hanging Ropes */
+.hanging-sign::before, 
+.hanging-sign::after {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 30px;
+    background-color: #aaa; /* Rope color */
+    top: -30px; /* Position above the sign */
+}
+
+.hanging-sign::before {
+    left: 20%;
+}
+
+.hanging-sign::after {
+    right: 20%;
+}
+
+/* Hanging Sign */
+.hanging-sign2 {
+    position: absolute;
+    top: 230px; /* Places it right below the navbar */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1000px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #1f1f1f;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+    margin-top: 10px;
+}
+
+/* Hanging Ropes */
+.hanging-sign2::before, 
+.hanging-sign2::after {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 30px;
+    background-color: #aaa; /* Rope color */
+    top: -30px; /* Position above the sign */
+}
+
+.hanging-sign2::before {
+    left: 20%;
+}
+
+.hanging-sign2::after {
+    right: 20%;
+}
+/* Hanging Sign */
+.hanging-sign3 {
+    position: absolute;
+    top: 360px; /* Places it right below the navbar */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1000px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #1f1f1f;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+    margin-top: 10px;
+}
+
+/* Hanging Ropes */
+.hanging-sign3::before, 
+.hanging-sign3::after {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 30px;
+    background-color: #aaa; /* Rope color */
+    top: -30px; /* Position above the sign */
+}
+
+.hanging-sign3::before {
+    left: 20%;
+}
+
+.hanging-sign3::after {
+    right: 20%;
+}
 /* Profile Section */
 .profile-container {
     display: flex;
@@ -64,19 +180,6 @@ body {
     object-fit: cover;
     border: 4px solid white;
     transition: transform 0.3s ease;
-}
-/* Responsive Fix */
-@media (max-height: 600px) {
-    .profile-container {
-        min-height: auto;
-        padding-top: 100px; /* Push content down if screen is too short */
-    }
-}
-
-@media (max-width: 480px) {
-    .profile-img {
-        width: 120px;
-    }
 }
 
 .profile-img:hover {
@@ -134,4 +237,28 @@ body {
     background-repeat: no-repeat; 
     background-size: cover; 
     background-position: center; 
+}
+
+/* Responsive Fix */
+@media (max-width: 600px) {
+    .hanging-sign {
+        width: 250px;
+        font-size: 14px;
+    }
+}
+
+/* Responsive Fix */
+@media (max-width: 600px) {
+    .hanging-sign2 {
+        width: 250px;
+        font-size: 14px;
+    }
+}
+
+/* Responsive Fix */
+@media (max-width: 600px) {
+    .hanging-sign3 {
+        width: 250px;
+        font-size: 14px;
+    }
 }
