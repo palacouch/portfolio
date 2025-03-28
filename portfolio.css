@@ -65,6 +65,19 @@ body {
     border: 4px solid white;
     transition: transform 0.3s ease;
 }
+/* Responsive Fix */
+@media (max-height: 600px) {
+    .profile-container {
+        min-height: auto;
+        padding-top: 100px; /* Push content down if screen is too short */
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-img {
+        width: 120px;
+    }
+}
 
 .profile-img:hover {
     transform: scale(1.1);
