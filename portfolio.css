@@ -41,15 +41,14 @@ meta[name="viewport"] {
 }
 
 /* Responsive Navbar for Small Screens */
-@media (max-width: 768px) {
+@media (min-width: 769px) {
     .topnav {
-        flex-direction: column; /* Stack links vertically */
+        flex-direction: row;
+        flex-wrap: nowrap;
     }
-    
+
     .topnav a {
-        width: 100%;
-        text-align: center;
-        padding: 10px;
+        width: auto;
     }
 }
 
