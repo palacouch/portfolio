@@ -194,3 +194,80 @@ section {
     background-size: cover;
     background-position: center;
 }
+
+.tech-stack {
+    padding: 20px 20px;
+    background-color: #1f1f1f;
+    text-align: center;
+}
+
+.tech-stack h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #04AA6D;
+    font-family: 'Merriweather', serif;
+}
+
+.stack-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.tech-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.tech-item:hover {
+    transform: scale(1.1);
+}
+
+.tech-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.tech-item span {
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .tech-item {
+        flex: 1 1 45%;
+        max-width: 120px;
+    }
+
+    .tech-item img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .tech-stack h2 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .tech-item {
+        flex: 1 1 100%;
+        max-width: 100px;
+    }
+
+    .tech-item img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .tech-stack h2 {
+        font-size: 24px;
+    }
+}
