@@ -52,17 +52,6 @@ html {
     border-radius: 5px;
 }
 
-@media (min-width: 769px) {
-    .topnav {
-        flex-direction: row;
-        flex-wrap: nowrap;
-    }
-
-    .topnav a {
-        width: auto;
-    }
-}
-
 /* Hanging Sign */
 .hanging-sign {
     position: relative;
@@ -195,23 +184,34 @@ section {
     background-position: center;
 }
 
+/* Tech Stack Styles */
 .tech-stack {
-    padding: 20px 20px;
+    padding: 20px;
     background-color: #1f1f1f;
     text-align: center;
+    max-width: 1000px; /* Optional: Set a max width for the background */
+    width: 100%; /* Make it take full width, but not stretch too far */
+    margin: 50px auto; /* Centers the box and adds top/bottom margin */
+    border-radius: 10px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.tech-stack h2 {
-    font-size: 32px;
+.tech-stack-title {
+    font-size: 42px;
     margin-bottom: 30px;
-    color: #04AA6D;
+    color: #d3dddc;
     font-family: 'Merriweather', serif;
+    position: relative;
+    text-align: center;
+    margin-top: 50px; /* Fix for top spacing */
+    animation: fadeInUp 1s ease-out;
 }
 
 .stack-icons {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    justify-content: center; /* Center the icons */
+    align-items: center; /* Vertically center */
+    flex-wrap: wrap; /* Allow wrapping */
     gap: 30px;
 }
 
@@ -227,8 +227,8 @@ section {
 }
 
 .tech-item img {
-    width: 80px;
-    height: 80px;
+    width: 120px;
+    height: 120px;
     object-fit: contain;
     margin-bottom: 10px;
 }
@@ -251,23 +251,103 @@ section {
         height: 50px;
     }
 
-    .tech-stack h2 {
+    .tech-stack-title {
         font-size: 28px;
     }
 }
 
 @media (max-width: 480px) {
     .tech-item {
+        flex: 1 1 45%;
+        max-width: 120px;
+    }
+
+    .tech-item img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .tech-stack-title {
+        font-size: 24px;
+    }
+}
+
+.certification-stack {
+    padding: 20px;
+    background-color: #1f1f1f;
+    text-align: center;
+    max-width: 1000px; /* Optional: Set a max width for the background */
+    width: 100%; /* Make it take full width, but not stretch too far */
+    margin: 50px auto; /* Centers the box and adds top/bottom margin */
+    border-radius: 10px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.certification-title {
+    font-size: 42px;
+    margin-bottom: 30px;
+    color: #d3dddc;
+    font-family: 'Merriweather', serif;
+    position: relative;
+    text-align: center;
+    margin-top: 50px; /* Fix for top spacing */
+    animation: fadeInUp 1s ease-out;
+}
+
+.cert-icons {
+    display: flex;
+    justify-content: center; /* Center the icons */
+    align-items: center; /* Vertically center */
+    flex-wrap: wrap; /* Allow wrapping */
+    gap: 30px;
+}
+
+.cert-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.cert-item:hover {
+    transform: scale(1.1);
+}
+
+.cert-item img {
+    width: 600px;
+    height: 300px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .cert-item {
+        flex: 1 1 45%;
+        max-width: 120px;
+    }
+
+    .cert-item img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .certification-title {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cert-item {
         flex: 1 1 100%;
         max-width: 100px;
     }
 
-    .tech-item img {
+    .cert-item img {
         width: 40px;
         height: 40px;
     }
 
-    .tech-stack h2 {
+    .certification-title {
         font-size: 24px;
     }
 }
