@@ -7,7 +7,7 @@
 body {
     background-color: #121212;
     margin: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Inter', sans-serif;
     color: #fff;
 }
 
@@ -65,7 +65,7 @@ meta[name="viewport"] {
     transform: translateX(-50%);
     width: 90%;
     max-width: 1000px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Merriweather', serif;
     background-color: #1f1f1f;
     color: #fff;
     text-align: center;
@@ -98,8 +98,8 @@ meta[name="viewport"] {
 }
 
 .profile-img {
-    width: 160px;
-    height: 160px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     object-fit: cover;
     border: 4px solid white;
