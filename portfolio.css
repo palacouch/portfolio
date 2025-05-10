@@ -192,9 +192,9 @@ section {
     padding: 20px;
     background-color: #1f1f1f;
     text-align: center;
-    max-width: 1000px; /* Optional: Set a max width for the background */
-    width: 100%; /* Make it take full width, but not stretch too far */
-    margin: 50px auto; /* Centers the box and adds top/bottom margin */
+    max-width: 1000px; 
+    width: 100%; 
+    margin: 50px auto; 
     border-radius: 10px;
     box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
 }
@@ -206,15 +206,15 @@ section {
     font-family: 'Merriweather', serif;
     position: relative;
     text-align: center;
-    margin-top: 50px; /* Fix for top spacing */
+    margin-top: 50px; 
     animation: fadeInUp 1s ease-out;
 }
 
 .stack-icons {
     display: flex;
-    justify-content: center; /* Center the icons */
-    align-items: center; /* Vertically center */
-    flex-wrap: wrap; /* Allow wrapping */
+    justify-content: center; 
+    align-items: center; 
+    flex-wrap: wrap; 
     gap: 30px;
 }
 
@@ -279,9 +279,9 @@ section {
     padding: 20px;
     background-color: #1f1f1f;
     text-align: center;
-    max-width: 1000px; /* Optional: Set a max width for the background */
-    width: 100%; /* Make it take full width, but not stretch too far */
-    margin: 50px auto; /* Centers the box and adds top/bottom margin */
+    max-width: 1000px; 
+    width: 100%; 
+    margin: 50px auto; 
     border-radius: 10px;
     box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
 }
@@ -293,15 +293,15 @@ section {
     font-family: 'Merriweather', serif;
     position: relative;
     text-align: center;
-    margin-top: 50px; /* Fix for top spacing */
+    margin-top: 50px; 
     animation: fadeInUp 1s ease-out;
 }
 
 .cert-icons {
     display: flex;
-    justify-content: center; /* Center the icons */
-    align-items: center; /* Vertically center */
-    flex-wrap: wrap; /* Allow wrapping */
+    justify-content: center; 
+    align-items: center; 
+    flex-wrap: wrap; 
     gap: 30px;
 }
 
