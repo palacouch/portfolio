@@ -18,24 +18,32 @@
             <a href="tech-stack.html">Tech Stack</a>
             <a href="contact.html" class="active">Contact</a>
         </nav>
-        <section class="profile-container3">
-            <img src="hs.jpg" alt="Profile Picture" class="profile-img3">
-            <h1 class="name">John Robert Rodriguez</h1>
-        </section>
-        <section class="contact-section">
+          <div class="contact-container">
+        <!-- Profile Image -->
+        <div class="contact-left">
+            <img src="hs.jpg" alt="Profile Picture" class="profile-circle">
+        </div>
+
+        <!-- Divider Line -->
+        <div class="contact-divider"></div>
+
+        <!-- Contact Info and Form -->
+        <div class="contact-right">
             <h2>Contact Me</h2>
             <div class="contact-links">
-                <a href="https://www.linkedin.com/in/john-robert-rodriguez-6b3a57364/" target="_blank">
-                    <img src="linkedin.webp" alt="LinkedIn">LinkedIn
-                </a>
-                <a href="https://github.com/palacouch" target="_blank">
-                    <img src="github.png" alt="GitHub">GitHub
-                </a>
+                <a href="https://www.linkedin.com/in/john-robert-rodriguez-6b3a57364/" target="_blank">LinkedIn</a><br>
+                <a href="https://github.com/palacouch" target="_blank">GitHub</a>
             </div>
-        </section>
-        
-        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-        <script src="http://threejs.org/examples/js/libs/stats.min.js"></script> <!-- stats.js lib --> 
-        <script src="particles.js"></script>
-    </body>
-</html>
+
+            <form class="contact-form" action="mailto:your-email@example.com" method="post" enctype="text/plain">
+                <input type="text" name="name" placeholder="Your Name" required><br>
+                <input type="email" name="email" placeholder="Your Email" required><br>
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea><br>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="particles.js"></script>
+</body>

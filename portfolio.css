@@ -126,9 +126,9 @@ section {
 
 /* === TECH STACK SECTION === */
 .tech-stack {
-    padding: 20px;
     background-color: #1f1f1f;
     text-align: center;
+    width: 70%;
     max-width: 1000px;
     margin: 50px auto;
     border-radius: 10px;
@@ -136,7 +136,7 @@ section {
 }
 
 .tech-stack-title {
-    font-size: 42px;
+    font-size: 60px;
     margin-bottom: 30px;
     color: #d3dddc;
     font-family: 'Merriweather', serif;
@@ -181,9 +181,9 @@ section {
 
 /* === CERTIFICATION SECTION === */
 .certification-stack {
-    padding: 20px;
     background-color: #1f1f1f;
     text-align: center;
+    width: 70%;
     max-width: 1000px;
     margin: 50px auto;
     border-radius: 10px;
@@ -191,7 +191,7 @@ section {
 }
 
 .certification-title {
-    font-size: 42px;
+    font-size: 60px;
     margin-bottom: 30px;
     color: #d3dddc;
     font-family: 'Merriweather', serif;
@@ -313,8 +313,9 @@ section {
     }
 
     .tech-item img {
-        width: 50px;
-        height: 50px;
+        width: 80px;
+        min-width: 60px;
+        height: auto;
     }
 
     .cert-item img {
@@ -369,6 +370,12 @@ section {
         max-height: 150px;
     }
 
+    .tech-item img {
+        width: 70px;
+        min-width: 50px;
+        height: auto;
+    }
+
     .tech-stack-title,
     .certification-title {
         font-size: 24px;
@@ -385,5 +392,91 @@ section {
     .contact-links img {
         width: 24px;
         height: 24px;
+    }
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.contact-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ccc;
+}
+
+.contact-divider {
+    width: 2px;
+    height: 300px;
+    background-color: #666;
+}
+
+.contact-right {
+    flex: 1;
+    min-width: 300px;   
+}
+
+.contact-right h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact-links a {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-family: inherit;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: rgb(54, 70, 78);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-right h2 {
+        text-align: center;
+    }
+
+    .contact-divider {
+        display: none;
+    }
+
+    .profile-circle {
+        width: 150px;
+        height: 150px;
     }
 }
