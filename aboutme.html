@@ -1,37 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel ="stylesheet" href="portfolio.css"/>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-        <title>John Robert A. Rodriguez</title>
-    </head>
-    <body>
-        
-        <div id="particles-js"></div>
-            <div class="header-wrapper">
-            <nav class="topnav">
-                <a href="contact.html">Contact</a>
-                <a href="index.html" >Home</a>
-                <a href="aboutme.html" class="active">About Me</a>
-                <a href="tech-stack.html">Tech Stack</a>
-            </nav>
-            <section class="profile-container2">
-                <img src="hs.jpg" alt="Profile Picture" class="profile-img2">
-            </section>
-            <div class="hanging-sign">
-                <p>Hello! I'm John Robert Rodriguez, a web, mobile developer & a tech enthusiast. I am currently studying at St. Dominic College of Asia, studying the course 
-                    of Bachelor of Science in Information Technology. I became an IT student, because I've always been near computers since my childhood days, I was fascinated by
-                    computers, I wanted to learn how to speak to computers. One of the challenge I'm having right now is HTML, CSS, and JS, I have 0 background over it, like no experience at all, I'm still learning things, but I think 
-                    I'm doing pretty good</p>
-            </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="portfolio.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>John Robert A. Rodriguez</title>
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div class="header-wrapper">
+        <nav class="topnav">
+            <a href="index.html">Home</a>
+            <a href="aboutme.html" class="active">About Me</a>
+            <a href="tech-stack.html">Tech Stack</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <section class="profile-container2">
+            <img src="hs.jpg" alt="Profile Picture" class="profile-img2">
+        </section>
+        <div class="hanging-sign reduced-spacing">
+            <p>Hello! I'm John Robert Rodriguez, a web and mobile developer & a tech enthusiast. I am currently studying at St. Dominic College of Asia, pursuing a Bachelor of Science in Information Technology. I've always been near computers since childhood, and I was fascinated by them early on—I wanted to learn how to speak to computers.</p>
+            <p>One of the challenges I'm currently facing is learning HTML, CSS, and JavaScript, as I have no background in them. Despite the steep learning curve, I'm making steady progress and enjoying the process of discovering how web technologies work.</p>
         </div>
-        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-        <script src="http://threejs.org/examples/js/libs/stats.min.js"></script> <!-- stats.js lib --> 
-        <script src="particles.js"></script>
-    </body>
+    </div>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+    <script src="particles.js"></script>
+    <script>
+        // Toggle Navbar for Mobile
+        document.querySelector('.nav-toggle').addEventListener('click', () => {
+            document.querySelector('.nav-links').classList.toggle('nav-open');
+        });
+    </script>
+</body>
 </html>

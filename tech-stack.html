@@ -14,14 +14,14 @@
 <body>
     <div id="particles-js"></div>
 
+    <!-- Responsive Navbar -->
     <nav class="topnav">
-        <a href="contact.html">Contact</a>
-        <a href="index.html">Home</a>
-        <a href="aboutme.html">About Me</a>
-        <a href="tech-stack.html" class="active">Tech Stack</a>
-    </nav>
+            <a href="index.html">Home</a>
+            <a href="aboutme.html">About Me</a>
+            <a href="tech-stack.html" class="active">Tech Stack</a>
+            <a href="contact.html">Contact</a>
+        </nav>
 
-    <!-- Tech Stack Title (Moved outside of the .tech-stack container) -->
     <h2 class="tech-stack-title">Tech Stack</h2>
 
     <section class="tech-stack">
@@ -41,19 +41,46 @@
             <div class="tech-item">
                 <img src="css.png" alt="CSS">
             </div>
+            <div class="tech-item">
+                <img src="git.png" alt="Git">
+            </div>
+            <div class="tech-item">
+                <img src="github.png" alt="GitHub">
+            </div>
+            <div class="tech-item">
+                <img src="vscode.png" alt="VS Code">
+            </div>
+            <div class="tech-item">
+                <img src="js.png" alt="JavaScript">
+            </div>
+            <div class="tech-item">
+                <img src="androidstudio.png" alt="Android Studio">
+            </div>
         </div>
     </section>
+
     <h3 class="certification-title">Certification</h3>
 
     <section class="certification-stack">
         <div class="cert-icons">
             <div class="cert-item">
-                <img src="cert.png" alt="Cert">Powerpoint and Microsoft Certificate
+                <img src="cert.png" alt="Cert">
+                <button onclick="window.open('cert.png', '_blank')">View Full Image</button>
             </div>
         </div>
     </section>
+
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
     <script src="particles.js"></script>
+
+    <script>
+        const navToggle = document.querySelector('.nav-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        navToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('nav-open');
+        });
+    </script>
 </body>
 </html>
