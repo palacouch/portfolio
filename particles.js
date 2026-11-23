@@ -1,4 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
+    if (typeof window.particlesJS !== "function") {
+        return;
+    }
+
     particlesJS("particles-js", {
         "particles": {
             "number": { "value": 38, "density": { "enable": true, "value_area": 800 } },
@@ -16,23 +20,4 @@ document.addEventListener("DOMContentLoaded", function () {
         "retina_detect": true
     });
 
-    // Stats for particle count (optional)
-    var count_particles, stats, update;
-    stats = new Stats();
-    stats.setMode(0);
-    stats.domElement.style.position = 'absolute';
-    stats.domElement.style.left = '0px';
-    stats.domElement.style.top = '0px';
-    document.body.appendChild(stats.domElement);
-
-    count_particles = document.querySelector('.js-count-particles');
-    update = function () {
-        stats.begin();
-        stats.end();
-        if (window.pJSDom && window.pJSDom[0].pJS.particles.array) {
-            count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
-        }
-        requestAnimationFrame(update);
-    };
-    requestAnimationFrame(update);
 });

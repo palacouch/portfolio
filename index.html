@@ -63,9 +63,137 @@
       <p class="bio">Aspiring Web & Mobile Developer | Tech Enthusiast</p>
     </section>
 
+
+    <!-- Academic project details added below the original profile. -->
+    <main class="portfolio-additions" id="projects" aria-label="Academic projects">
+      <section id="care-project" aria-labelledby="care-heading">
+        <h2 id="care-heading">Capstone &amp; IoT Project</h2>
+        <h3>C.A.R.E.</h3>
+        <p class="project-subtitle">Smart Wireless IoT-Enabled Location Tracker for Rapid Emergency Intervention and Real Time Response for Elderly and Persons With Disability using Arduino Framework</p>
+        <p>C.A.R.E. combines an Arduino-compatible wearable with web and mobile applications to help elderly individuals, persons with disabilities, and other users send emergency alerts. A tactile push button and automatic fall detection provide two ways to activate an alert, with GPS location information shared through the application's cloud workflow or the configured cellular SMS route. This is both our capstone and IoT project.</p>
+
+        <dl>
+          <dt>My role and contribution</dt>
+          <dd>Frontend and backend programmer for the C.A.R.E. application.</dd>
+          <dt>Team members</dt>
+          <dd>Guinto, Rean Jericho G.<br />Rodriguez, John Robert A.<br />Sandoval, Luke Gabriel P.<br />Tibayan, Jericho Noel A.</dd>
+          <dt>Current status</dt>
+          <dd>Working integrated prototype with controlled testing and research evaluation documented. Further refinement and field validation remain.</dd>
+        </dl>
+
+        <h3>Main Objective</h3>
+        <p>To design and implement a low-cost, reliable, and user-friendly Arduino-based wearable IoT emergency alert system that sends real-time emergency notifications to family members or emergency responders when the user is in danger.</p>
+
+        <h3>Specific Objectives</h3>
+        <ol>
+          <li>Design a wearable emergency alert device that can be easily used by elderly individuals, people with disabilities, outdoor workers, and individuals living alone.</li>
+          <li>Implement a dual-trigger alert system that combines a manual tactile push button with automated fall detection to dispatch alerts during both conscious and incapacitated emergency scenarios.</li>
+          <li>Integrate location tracking to capture precise GPS coordinates and transmit them alongside the emergency alert.</li>
+          <li>Create a mobile communication system that dispatches real-time distress notifications and location updates through the C.A.R.E. application to family members and emergency contacts.</li>
+          <li>Provide a cost-effective alternative to existing commercial wearable emergency devices.</li>
+          <li>Evaluate the functionality, reliability, and response time of the proposed emergency alert system.</li>
+        </ol>
+
+        <h3>Technologies &amp; Components</h3>
+        <ul>
+          <li><strong>Wearable hardware:</strong> ESP32 microcontroller, NEO-6M GPS module, ADXL345 three-axis accelerometer, Air780E 4G cellular module, tactile push button, and rechargeable battery.</li>
+          <li><strong>Firmware:</strong> Arduino framework and Arduino IDE.</li>
+          <li><strong>Applications:</strong> Next.js web management interface and React Expo mobile application.</li>
+          <li><strong>Cloud and maps:</strong> Firebase Realtime Database, Google Maps API, and JSON data exchange.</li>
+          <li><strong>Communication:</strong> Wi-Fi cloud synchronization and cellular SMS communication.</li>
+        </ul>
+        <p>The documented application includes login and registration, a dashboard, emergency-contact and group management, and a location tracker.</p>
+
+        <h3>Project Output &amp; Preliminary Results</h3>
+        <p>The research documents an integrated wearable and companion application prototype. In controlled observations, the team reported:</p>
+        <ul>
+          <li>Emergency alerts in all 15 simulated-fall trials: five forward, five sideward, and five backward falls.</li>
+          <li>Approximately 2&ndash;5 seconds from a recognized trigger to an alert when a usable GPS fix and communication were already available. Initial GPS acquisition was excluded, and per-trial timing logs were not supplied.</li>
+          <li>Displayed locations approximately 5&ndash;10 meters from a Google Maps reference under the observed conditions, plus delivery of an SMS to the configured recipient.</li>
+        </ul>
+        <p>Survey evaluations were favorable, with mean ratings of 4.46/5 from 155 end users and 4.41/5 from 38 IT experts. These ratings describe participant perceptions.</p>
+        <p class="evidence-note">The observations are preliminary: they do not establish general fall-detection accuracy, a guaranteed alert time, long-term battery endurance, automatic network failover, or integration with official emergency dispatch services.</p>
+
+        <h3>Project Evidence</h3>
+        <figure class="project-evidence">
+          <a href="assets/projects/care-system-architecture.png" target="_blank" rel="noopener noreferrer" aria-label="Open the full C.A.R.E. system architecture diagram in a new tab">
+            <img src="assets/projects/care-system-architecture.png" alt="C.A.R.E. system architecture connecting button, accelerometer and GPS inputs to an ESP32, cloud alerts, SMS and local indicators." width="2048" height="1178" loading="lazy" />
+          </a>
+          <figcaption>System architecture showing the wearable inputs, processing, and notification paths. Source: capstone research paper, PDF page 33. Select the image to view it at full size.</figcaption>
+        </figure>
+        <figure class="project-evidence">
+          <a href="assets/projects/care-hardware-framework.png" target="_blank" rel="noopener noreferrer" aria-label="Open the full C.A.R.E. hardware framework diagram in a new tab">
+            <img src="assets/projects/care-hardware-framework.png" alt="C.A.R.E. hardware framework showing the battery, ESP32, ADXL345 accelerometer, NEO-6M GPS, Air780E cellular module, and connected inputs and outputs." width="1199" height="688" loading="lazy" />
+          </a>
+          <figcaption>Hardware framework and component connections. Source: capstone research paper, PDF page 35.</figcaption>
+        </figure>
+        <figure class="project-evidence">
+          <div class="project-screens">
+            <a href="assets/projects/care-login-dark.png" target="_blank" rel="noopener noreferrer" aria-label="Open the full C.A.R.E. dark login screen in a new tab">
+              <img src="assets/projects/care-login-dark.png" alt="C.A.R.E. mobile login screen in dark mode, with email, password, Google sign-in, and account creation options." width="720" height="1604" loading="lazy" />
+            </a>
+            <a href="assets/projects/care-login-light.png" target="_blank" rel="noopener noreferrer" aria-label="Open the full C.A.R.E. light login screen in a new tab">
+              <img src="assets/projects/care-login-light.png" alt="C.A.R.E. mobile login screen in light mode, with empty email and password fields." width="720" height="1604" loading="lazy" />
+            </a>
+          </div>
+          <figcaption>Documented mobile login interfaces in dark and light modes. Source: capstone research paper, PDF page 43.</figcaption>
+        </figure>
+        <p><a href="assets/projects/care-research-excerpt.pdf" type="application/pdf" target="_blank" rel="noopener noreferrer">View the capstone diagram excerpt (PDF, source pages 33 and 35)</a></p>
+      </section>
+
+      <section id="third-year-projects" aria-labelledby="third-year-heading">
+        <h2 id="third-year-heading">Third-Year Course Projects</h2>
+        <h3>A Card Payment System: Improving Digital Transfers at SDCA</h3>
+        <p>SDCPay is an academic card-payment prototype for St. Dominic College of Asia's canteen, business center, and campus store. It brings account access, reloadable balances, payments, and transaction records into one application, with the goal of reducing queues and cash handling.</p>
+        <dl>
+          <dt>My role and contribution</dt>
+          <dd>Frontend and backend programmer for the card payment system.</dd>
+          <dt>Team members</dt>
+          <dd>Guinto, Rean Jericho G.<br />Rodriguez, John Robert A.<br />Sandoval, Luke Gabriel P.<br />Tibayan, Jericho Noel A.</dd>
+          <dt>Current status</dt>
+          <dd>Working academic prototype with documented interfaces. Formal test cases are recorded as active or pending in the research paper.</dd>
+        </dl>
+
+        <h3>Project Objectives</h3>
+        <ul>
+          <li>Reduce waiting times and cash handling in campus payment transactions.</li>
+          <li>Provide card-based payments, balance loading, and accurate transaction records for monitoring and accountability.</li>
+          <li>Evaluate transaction accuracy, reliability, and performance during peak hours.</li>
+          <li>Assess user acceptance, ease of use, and perceived security.</li>
+        </ul>
+
+        <h3>Technologies Used</h3>
+        <ul>
+          <li><strong>Frontend:</strong> Flutter and Dart.</li>
+          <li><strong>Backend:</strong> Node.js and Express APIs.</li>
+          <li><strong>Database:</strong> MongoDB, with MongoDB Atlas and Compass documented as development tools.</li>
+          <li><strong>Development tools:</strong> Visual Studio Code, Bruno for API testing, and Git/GitHub for version control.</li>
+          <li><strong>Card workflow:</strong> RFID/card-reader integration, with manual card-ID entry supported by the prototype.</li>
+        </ul>
+
+        <h3>Documented Output &amp; Features</h3>
+        <p>The paper includes interfaces for login and registration, account balances and loading, payments, transaction history, cashier operations, admin user and role management, card activation, and daily reports.</p>
+        <p class="evidence-note">GCash/Maya loading is simulated in the prototype. The documented test cases do not establish completed validation, live payment-provider integration, or measured reductions in transaction or waiting times.</p>
+
+        <h3>Project Evidence</h3>
+        <figure class="project-evidence">
+          <a href="assets/projects/sdcpay-process-flow.png" target="_blank" rel="noopener noreferrer" aria-label="Open the full SDCPay process-flow diagram in a new tab">
+            <img src="assets/projects/sdcpay-process-flow.png" alt="SDCPay data-flow diagram showing account access, balance loading, payment transactions, transaction management, cashier and admin roles, and databases." width="1011" height="959" loading="lazy" />
+          </a>
+          <figcaption>Process model for account access, loading, payments, and transaction management. Source: third-year research paper, PDF page 37. Select the image to view it at full size.</figcaption>
+        </figure>
+        <figure class="project-evidence">
+          <a href="assets/projects/sdcpay-login.png" target="_blank" rel="noopener noreferrer" aria-label="Open the full SDCPay login screen in a new tab">
+            <img src="assets/projects/sdcpay-login.png" alt="SDCPay prototype login interface with a red background and empty user ID and password fields." width="1100" height="900" loading="lazy" />
+          </a>
+          <figcaption>SDCPay account login interface. Source: third-year research paper, PDF page 60.</figcaption>
+        </figure>
+        <p><a href="assets/projects/sdcpay-research-excerpt.pdf" type="application/pdf" target="_blank" rel="noopener noreferrer">View the process and data-model excerpt (PDF, source pages 37 and 42)</a></p>
+      </section>
+    </main>
+
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
     <script src="particles.js"></script>
 
     <!-- Bootstrap JS Bundle -->

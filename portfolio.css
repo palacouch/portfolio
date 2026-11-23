@@ -574,3 +574,184 @@ section {
         font-size: 16px;
     }
 }
+
+/* Readability for added content only; the original UI rules above are preserved. */
+.portfolio-additions {
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    overflow-wrap: break-word;
+}
+
+.portfolio-additions > section {
+    padding: 30px 24px;
+    margin-bottom: 40px;
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.portfolio-additions h2 {
+    color: #e0e0e0;
+    font-size: 30px;
+    line-height: 1.4;
+    text-align: center;
+    margin: 0 0 28px;
+}
+
+.portfolio-additions h3 {
+    color: #fff;
+    font-size: 22px;
+    line-height: 1.5;
+    margin: 28px 0 16px;
+}
+
+.portfolio-additions p,
+.portfolio-additions dd,
+.portfolio-additions li {
+    color: #f2f2f2;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.portfolio-additions p {
+    margin-bottom: 18px;
+}
+
+.portfolio-additions .project-subtitle {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.portfolio-additions dt {
+    color: #fff;
+    margin-top: 16px;
+    margin-bottom: 4px;
+}
+
+.portfolio-additions dd {
+    margin-left: 0;
+    margin-bottom: 18px;
+}
+
+.portfolio-additions ol,
+.portfolio-additions ul {
+    padding-left: 24px;
+}
+
+.portfolio-additions li {
+    padding-left: 4px;
+    margin-bottom: 14px;
+}
+
+.portfolio-additions figure {
+    margin: 28px 0;
+    padding: 20px;
+    background: #2a2a2a;
+    border-radius: 8px;
+}
+
+.portfolio-additions figcaption {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.portfolio-additions .evidence-note {
+    color: #ccc;
+}
+
+/* Evidence images stay within the existing project panels. */
+.portfolio-additions .project-evidence img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.portfolio-additions .project-evidence > a {
+    display: block;
+}
+
+.portfolio-additions .project-evidence figcaption {
+    margin: 14px 0 0;
+    font-size: 15px;
+    line-height: 1.8;
+    font-weight: 400;
+}
+
+.portfolio-additions .project-screens {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.portfolio-additions .project-screens a {
+    display: block;
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto;
+}
+
+.portfolio-additions a,
+.portfolio-details a {
+    color: #91e5be;
+    text-underline-offset: 3px;
+}
+
+.portfolio-details {
+    width: 100%;
+    max-width: 560px;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    text-align: left;
+    overflow-wrap: break-word;
+}
+
+.portfolio-details h4 {
+    color: #fff;
+    font-size: 22px;
+    line-height: 1.5;
+    margin: 10px 0 16px;
+}
+
+.portfolio-details dt {
+    color: #fff;
+    margin-bottom: 4px;
+}
+
+.portfolio-details dd {
+    color: #f2f2f2;
+    margin: 0 0 16px;
+}
+
+@media (max-width: 600px) {
+    .portfolio-additions > section {
+        padding: 24px 20px;
+    }
+
+    .portfolio-additions h2 {
+        font-size: 25px;
+    }
+
+    .portfolio-additions h3,
+    .portfolio-details h4 {
+        font-size: 20px;
+    }
+
+    .portfolio-additions figure {
+        padding: 16px;
+    }
+
+    .portfolio-additions .project-screens {
+        grid-template-columns: 1fr;
+    }
+}
